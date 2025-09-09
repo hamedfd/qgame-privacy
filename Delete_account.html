@@ -15,6 +15,7 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
+      direction: rtl; /* اجعل كل المحتوى من اليمين إلى اليسار */
     }
     .container {
       max-width: 700px;
@@ -23,7 +24,7 @@
       padding: 30px 40px;
       border-radius: 15px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-      text-align: center;
+      text-align: center; /* النصوص الرئيسية في المنتصف */
     }
     h1 {
       color: #fada5b;
@@ -33,13 +34,17 @@
       color: #fada5b;
       margin: 20px 0 10px;
     }
-    p, li, ol li {
-      margin-bottom: 10px;
+    p {
+      margin-bottom: 15px;
     }
     ul, ol {
-      text-align: left;
-      display: inline-block;
+      display: inline-block; /* تجعل القوائم وسط الصفحة */
+      text-align: right; /* محتوى القوائم من اليمين لليسار */
       margin: 10px 0;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 8px;
     }
     a.button {
       display: inline-block;
